@@ -604,21 +604,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*
-.form-input:focus {
-  outline: 1px solid var(--brand-color-blue);
-  transition-property: outline;
-  transition-duration: var(--default-time);
-  transition-timing-function: var(--default-timing-function);
-}
-
-.form-input:focus + svg {
-  fill: var(--brand-color-blue);
-  transition-property: fill;
-  transition-duration: var(--default-time);
-  transition-timing-function: var(--default-timing-function);
-}
-*/
 /*style dla portfolio*/
 
 .portfolio-title {
@@ -861,6 +846,7 @@ button {
 }
 .backdrop {
   display: flex;
+
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   left: 0;
@@ -872,6 +858,10 @@ button {
   transform: scale(1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 1;
+
+  transition-property: visibility, opacity, transform;
 }
 
 /* Style cholernego formularza*/
@@ -885,7 +875,7 @@ button {
 .form-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.5;
   letter-spacing: 0.01em;
   color: var(--color-text-second);
   margin: 10px 0 4px 0;
@@ -899,12 +889,29 @@ button {
   margin-bottom: 2px;
 }
 
+.form-input:focus {
+  outline: 1px solid var(--color-link-first);
+  transition-property: outline;
+  transition-duration: var(--default-time);
+  transition-timing-function: var(--default-timing-function);
+}
+
+.form-input:focus + svg {
+  fill: var(--color-link-first);
+  transition-property: fill;
+  transition-duration: var(--default-time);
+  transition-timing-function: var(--default-timing-function);
+}
+
 .icons-form {
   top: 32px;
   left: 15px;
   fill: var(--color-text-first);
 }
-
+.input-icons {
+  width: 448px;
+  height: 342px;
+}
 .input-icons input {
   width: 448px;
   height: 40px;
