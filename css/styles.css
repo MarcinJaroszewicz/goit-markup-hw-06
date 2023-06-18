@@ -532,6 +532,12 @@ ul {
   text-transform: uppercase;
   line-height: 1.1428em;
   font-size: 14px;
+  transition-duration: var(--default-time);
+  transition-timing-function: var(--default-timing-function);
+}
+.footer-inscription:focus-within,
+.footer-inscription:hover {
+  color: #2196f3;
 }
 .input-send {
   margin-top: 20px;
@@ -556,6 +562,12 @@ ul {
 
   text-align: center;
 }
+
+.button-signin:hover,
+.button-signin:focus {
+  background-color: #f5f4fa;
+  color: #212121;
+}
 .icon-newsletter {
   fill: var(--color-text-third);
   margin-left: 24px;
@@ -567,8 +579,32 @@ ul {
   border: 1px solid var(--newsletter-border);
   border-radius: 4px;
   padding-left: 16px;
+
+  display: block;
+
+  margin-top: 20px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: white;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.newsletter-input:focus-within {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*
 .form-input:focus {
   outline: 1px solid var(--brand-color-blue);
   transition-property: outline;
@@ -582,7 +618,7 @@ ul {
   transition-duration: var(--default-time);
   transition-timing-function: var(--default-timing-function);
 }
-
+*/
 /*style dla portfolio*/
 
 .portfolio-title {
