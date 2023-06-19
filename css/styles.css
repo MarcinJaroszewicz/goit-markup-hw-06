@@ -428,8 +428,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-bottom: 20px;
   color: var(--color-text-third);
+  display: block;
 }
 .footer-wrap {
   display: flex;
@@ -525,7 +526,7 @@ ul {
 }
 
 .footer-newsletter {
-  margin: 72px 0 0 78px;
+  margin-left: 78px;
 }
 
 .footer-inscription {
@@ -540,7 +541,6 @@ ul {
   color: #2196f3;
 }
 .input-send {
-  margin-top: 20px;
   display: flex;
   gap: 12px;
 }
@@ -561,6 +561,7 @@ ul {
   color: var(--color-text-third);
 
   text-align: center;
+  position: relative;
 }
 
 .button-signin:hover,
@@ -571,7 +572,11 @@ ul {
 .icon-newsletter {
   fill: var(--color-text-third);
   margin-left: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
 .newsletter-input {
   width: 358px;
   height: 50px;
@@ -582,7 +587,6 @@ ul {
 
   display: block;
 
-  margin-top: 20px;
   background-color: #2f303a;
   padding-left: 16px;
   font-size: 16px;
@@ -995,6 +999,7 @@ button {
 
 .checkbox-text {
   margin-left: 8px;
+  color: var(--color-text-second);
 }
 
 .checkbox-hidden {
