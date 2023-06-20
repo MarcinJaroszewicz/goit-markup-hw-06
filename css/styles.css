@@ -526,7 +526,7 @@ ul {
 }
 
 .footer-newsletter {
-  margin-left: 78px;
+  margin-left: auto;
 }
 
 .footer-inscription {
@@ -945,8 +945,10 @@ button {
 }
 
 .form-box {
-  position: relative;
   margin-bottom: 10px;
+}
+.form-box2 {
+  position: relative;
 }
 
 ::after,
