@@ -560,14 +560,17 @@ ul {
   font-family: var(--font-primary);
   color: var(--color-text-third);
 
-  text-align: center;
+  text-align: left;
   position: relative;
+  padding-left: 42px;
 }
 
 .button-signin:hover,
 .button-signin:focus {
   background-color: #f5f4fa;
   color: #212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-newsletter {
   fill: var(--color-text-third);
